@@ -1,0 +1,33 @@
+{
+  "name": "status-genie-api",
+  "version": "1.0.0",
+  "description": "API for Status Genie Slack app",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "NODE_ENV=dev webpack --watch --mode=development",
+    "build": "NODE_ENV=prod webpack --mode=production",
+    "lint": "tslint --project tsconfig.json",
+    "deploy": "aws cloudformation deploy --template-file packaged.yaml --stack-name StatusGenieApi --capabilities CAPABILITY_IAM --region $(echo $AWS_REGION)"
+  },
+  "keywords": [],
+  "author": "Ognjen Stoisavljevic <ognjen@cloudhorizon.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.0",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.27",
+    "@types/node": "^12.0.10",
+    "@vacationtracker/api-gateway-http-response": "^1.0.0",
+    "aws-sdk": "^2.485.0",
+    "minimal-request-promise": "^1.5.0"
+  }
+}

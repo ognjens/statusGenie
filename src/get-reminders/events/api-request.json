@@ -1,0 +1,137 @@
+{
+  "resource": "/reminders",
+  "path": "/reminders",
+  "httpMethod": "GET",
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Authorization": "Bearer eyJraWQiOiJkbHNnSVYwejVSeHl0ekQzaUxtUUlhZGZaTVU0YVpLNjFFakVaR0gxQ1FrPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiU1ZQWXNNcXlHcmpzRTNJZGVleEg4QSIsInN1YiI6ImJlNWM5ZGI4LTJlZWQtNGM3MS1hN2Q3LTE1NDVlYTRmMmY2MyIsImF1ZCI6IjF2Y2Uwcjl1bDFkdjRyN3VhZW9ybWwxMWtlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImV2ZW50X2lkIjoiYTFhMTRkM2QtODliOS00ZWY4LThjNTYtNDIzNjFmMGE1OGNkIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NjIyNTY2MTcsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS1jZW50cmFsLTEuYW1hem9uYXdzLmNvbVwvZXUtY2VudHJhbC0xXzc1VWJVS3RTNCIsImNvZ25pdG86dXNlcm5hbWUiOiJiZTVjOWRiOC0yZWVkLTRjNzEtYTdkNy0xNTQ1ZWE0ZjJmNjMiLCJleHAiOjE1NjIyNjAyMTcsImlhdCI6MTU2MjI1NjYxNywiZW1haWwiOiJzbG9ib2RhbkBjbG91ZGhvcml6b24uY29tIn0.AmpXqftyDo1GluuOqpHaQfrY6PrIf3a919dpprsF5v2N_heP2LZREuTGa1Qrnrj_NO_EVVVi7beDfQ8aPSzaWz_hxmmmNxWzh6SdTJKC8JLqapQPl6Iqzs1jvVc8Yxzd9H8dJBjJ4sPBO4sj4zuQHzuowvTLA4hpS41Q4C-i376LTXpOLDOvWGRTQ0XOGugLNHVjBvaKqdNmoThZSuCX1HYArlwm2E-VrHUmKEvl7FMVvh_i6cyrUT7H5izp8uDcnOn9YeN17fKb0wPAoR_Sr3kG6tzGPPYyVur3eklUDovHOuKm62vJHkJ4cbsQ0Umre8EX0pJF8ZCG3Xys1C0Ftg",
+    "cache-control": "no-cache",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-Country": "RS",
+    "Host": "289bwe9nz4.execute-api.eu-central-1.amazonaws.com",
+    "Postman-Token": "d0c6ba6b-03d0-4eb5-8155-565257c37c29",
+    "User-Agent": "PostmanRuntime/7.6.0",
+    "Via": "1.1 5d40d4ac7c3a1e18748166636540091f.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "s2YDXpM-4BH9gEv1gOShxd-rIYCk1r6Yh4MOMYOqSXjq9h2MuJluig==",
+    "X-Amzn-Trace-Id": "Root=1-5d1e2724-102dda004fff6c4019a14200",
+    "X-Forwarded-For": "109.122.102.202, 54.239.171.73",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate"
+    ],
+    "Authorization": [
+      "Bearer eyJraWQiOiJkbHNnSVYwejVSeHl0ekQzaUxtUUlhZGZaTVU0YVpLNjFFakVaR0gxQ1FrPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiU1ZQWXNNcXlHcmpzRTNJZGVleEg4QSIsInN1YiI6ImJlNWM5ZGI4LTJlZWQtNGM3MS1hN2Q3LTE1NDVlYTRmMmY2MyIsImF1ZCI6IjF2Y2Uwcjl1bDFkdjRyN3VhZW9ybWwxMWtlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImV2ZW50X2lkIjoiYTFhMTRkM2QtODliOS00ZWY4LThjNTYtNDIzNjFmMGE1OGNkIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NjIyNTY2MTcsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS1jZW50cmFsLTEuYW1hem9uYXdzLmNvbVwvZXUtY2VudHJhbC0xXzc1VWJVS3RTNCIsImNvZ25pdG86dXNlcm5hbWUiOiJiZTVjOWRiOC0yZWVkLTRjNzEtYTdkNy0xNTQ1ZWE0ZjJmNjMiLCJleHAiOjE1NjIyNjAyMTcsImlhdCI6MTU2MjI1NjYxNywiZW1haWwiOiJzbG9ib2RhbkBjbG91ZGhvcml6b24uY29tIn0.AmpXqftyDo1GluuOqpHaQfrY6PrIf3a919dpprsF5v2N_heP2LZREuTGa1Qrnrj_NO_EVVVi7beDfQ8aPSzaWz_hxmmmNxWzh6SdTJKC8JLqapQPl6Iqzs1jvVc8Yxzd9H8dJBjJ4sPBO4sj4zuQHzuowvTLA4hpS41Q4C-i376LTXpOLDOvWGRTQ0XOGugLNHVjBvaKqdNmoThZSuCX1HYArlwm2E-VrHUmKEvl7FMVvh_i6cyrUT7H5izp8uDcnOn9YeN17fKb0wPAoR_Sr3kG6tzGPPYyVur3eklUDovHOuKm62vJHkJ4cbsQ0Umre8EX0pJF8ZCG3Xys1C0Ftg"
+    ],
+    "cache-control": [
+      "no-cache"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-Country": [
+      "RS"
+    ],
+    "Host": [
+      "289bwe9nz4.execute-api.eu-central-1.amazonaws.com"
+    ],
+    "Postman-Token": [
+      "d0c6ba6b-03d0-4eb5-8155-565257c37c29"
+    ],
+    "User-Agent": [
+      "PostmanRuntime/7.6.0"
+    ],
+    "Via": [
+      "1.1 5d40d4ac7c3a1e18748166636540091f.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "s2YDXpM-4BH9gEv1gOShxd-rIYCk1r6Yh4MOMYOqSXjq9h2MuJluig=="
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-5d1e2724-102dda004fff6c4019a14200"
+    ],
+    "X-Forwarded-For": [
+      "109.122.102.202, 54.239.171.73"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "8nmglx",
+    "authorizer": {
+      "claims": {
+        "at_hash": "SVPYsMqyGrjsE3IdeexH8A",
+        "sub": "be5c9db8-2eed-4c71-a7d7-1545ea4f2f63",
+        "aud": "1vce0r9ul1dv4r7uaeorml11ke",
+        "email_verified": "true",
+        "event_id": "a1a14d3d-89b9-4ef8-8c56-42361f0a58cd",
+        "token_use": "id",
+        "auth_time": "1562256617",
+        "iss": "https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_75UbUKtS4",
+        "cognito:username": "be5c9db8-2eed-4c71-a7d7-1545ea4f2f63",
+        "exp": "Thu Jul 04 17:10:17 UTC 2019",
+        "iat": "Thu Jul 04 16:10:17 UTC 2019",
+        "email": "slobodan@cloudhorizon.com"
+      }
+    },
+    "resourcePath": "/reminders",
+    "httpMethod": "GET",
+    "extendedRequestId": "cTsNvHdCliAFaJQ=",
+    "requestTime": "04/Jul/2019:16:19:48 +0000",
+    "path": "/dev/reminders",
+    "accountId": "721177882564",
+    "protocol": "HTTP/1.1",
+    "stage": "dev",
+    "domainPrefix": "289bwe9nz4",
+    "requestTimeEpoch": 1562257188738,
+    "requestId": "8b548626-9e77-11e9-b83f-799e3d6073d3",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "109.122.102.202",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "PostmanRuntime/7.6.0",
+      "user": null
+    },
+    "domainName": "289bwe9nz4.execute-api.eu-central-1.amazonaws.com",
+    "apiId": "289bwe9nz4"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}
